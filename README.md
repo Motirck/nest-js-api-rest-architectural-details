@@ -19,7 +19,7 @@ Nest Documentation: https://docs.nestjs.com/
 
 > nest new nest-js-api-rest-architectural-details
 
-> 
+> npm install class-transformer@0.2.3 class-validator@0.12.2 --save-exact
 
 
 
