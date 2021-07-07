@@ -16,7 +16,7 @@ export class User {
     })
     userName: string;
 
-    @Expose({ // This will return the name emailAddress instead of email
+    @Expose({ // This will return the name emailAddress instead of email0
         name: 'emailAddress'
     })
     @IsEmail({}, {
