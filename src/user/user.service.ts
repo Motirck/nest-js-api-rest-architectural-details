@@ -3,9 +3,7 @@ import { User } from "./user.entity";
 
 @Injectable()
 export class UserService {
-
-
-    private users = [
+    private users: Array<User>  = [
         {
             id: 1,
             userName: "gabriel",
@@ -22,6 +20,7 @@ export class UserService {
     }
 
     public getByUserName(userName: string): User {
-        return this.users.find(user => user.userName = userName);
+        const foundUser = this.users.find(user => user.userName == userName);
+        return foundUser;
     }
 }
